@@ -1,5 +1,4 @@
 require 'aws'
-require 'pry'
 require 'dragonfly'
 
 Dragonfly::App.register_datastore(:dreamobjects) { Dragonfly::DreamobjectsDataStore }
