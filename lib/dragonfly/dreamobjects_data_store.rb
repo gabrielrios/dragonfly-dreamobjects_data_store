@@ -24,7 +24,6 @@ module Dragonfly
     def read(uid)
       object = bucket.objects[uid]
       data = object.read
-      binding.pry
       meta = Serializer.json_decode(object.metadata[:json])
         [
           data,     # can be a String, File, Pathname, Tempfile
