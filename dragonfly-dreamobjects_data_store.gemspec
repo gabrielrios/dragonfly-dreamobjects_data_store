@@ -14,11 +14,11 @@ Gem::Specification.new do |spec|
   spec.license     = "MIT"
 
   spec.files         = `git ls-files`.split($/)
-  spec.executabls    = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.executables    = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{ˆ(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependecy "dragonfly", "~> 1.0"
-  spec.add_runtime_dependecy "aws-sdk"
+  spec.add_runtime_dependency "dragonfly", "~> 1.0"
+  spec.add_runtime_dependency "aws-sdk"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
