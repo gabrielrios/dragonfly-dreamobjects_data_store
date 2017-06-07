@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "dragonfly", "~> 1.0"
-  spec.add_runtime_dependency "aws-sdk"
+  spec.add_runtime_dependency "aws-sdk", "1.59.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
