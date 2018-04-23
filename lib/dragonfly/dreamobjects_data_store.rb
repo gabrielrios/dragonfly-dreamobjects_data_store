@@ -43,7 +43,7 @@ module Dragonfly
       @storage ||= AWS::S3.new(access_key_id: @access_key_id,
                               secret_access_key: @secret_access_key,
                               s3_endpoint: @endpoint,
-                              use_ssl: false,
+                              use_ssl: true,
                               s3_force_path_style: true)
     end
 
