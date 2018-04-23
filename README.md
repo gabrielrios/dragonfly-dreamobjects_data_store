@@ -1,4 +1,4 @@
-# Dragonfly::S3DataStore
+# Dragonfly::DreamobjectsDataStore
 
 Dreamobjects data store for use with the [Dragonfly](http://github.com/markevans/dragonfly) gem.
 

@@ -8,7 +8,7 @@ describe Dragonfly::DreamobjectsDataStore do
   # key: XXXXXXXXXX
   # secret: XXXXXXXXXX
   # enabled: true
-  if File.exist?(file = File.expand_path('../../.s3_spec.yml', __FILE__))
+  if File.exist?(file = File.expand_path('../../.dreamobjects_spec.yml', __FILE__))
     config = YAML.load_file(file)
     KEY = config['key']
     SECRET = config['secret']

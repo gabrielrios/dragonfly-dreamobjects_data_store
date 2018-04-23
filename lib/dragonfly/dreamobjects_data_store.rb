@@ -9,7 +9,7 @@ module Dragonfly
       @bucket_name       = options[:bucket_name]
       @access_key_id     = options[:access_key_id]
       @secret_access_key = options[:secret_access_key]
-      @endpoint          = options.fetch(:endpoint, 'objects.dreamhost.com')
+      @endpoint          = options.fetch(:endpoint, 'objects-us-west-1.dream.io')
     end
 
     def write(content, opts={})
@@ -42,9 +42,7 @@ module Dragonfly
     def storage
       @storage ||= AWS::S3.new(access_key_id: @access_key_id,
                               secret_access_key: @secret_access_key,
-                              s3_endpoint: @endpoint,
-                              use_ssl: true,
-                              s3_force_path_style: true)
+                              s3_endpoint: @endpoint)
     end
 
     def bucket

@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Gabriel Rios"]
   spec.email       = ["gabrielfalcaorios@gmail.com"]
   spec.description = %q{Dreamobjects data store for Dragonfly}
-  spec.summary     = %q{Data store for storing Dragonfly content (e.g. images) on S3}
+  spec.summary     = %q{Data store for storing Dragonfly content (e.g. images) on Dreamobjects}
   spec.homepage    = "https://github.com/gabrielrios/dragonfly-dreamobjects_data_store"
   spec.license     = "MIT"
 
