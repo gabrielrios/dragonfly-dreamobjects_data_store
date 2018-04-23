@@ -40,9 +40,11 @@ module Dragonfly
 
     private
     def storage
-      @storage ||= AWS::S3.new(access_key_id: @access_key_id,
-                              secret_access_key: @secret_access_key,
-                              s3_endpoint: @endpoint)
+      @storage ||= AWS::S3.new(access_key_id:       @access_key_id,
+                              secret_access_key:    @secret_access_key,
+                              s3_endpoint:          @endpoint,
+                              use_ssl:              false,
+                              s3_force_path_style:  true)
     end
 
     def bucket
